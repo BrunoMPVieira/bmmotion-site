@@ -137,6 +137,12 @@
       openModal('<iframe src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1&playsinline=1" title="' + title.replace(/"/g, "&quot;") + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>', v.hasAttribute("data-vertical"));
       return;
     }
+    var tr = e.target.closest("[data-trailer]");
+    if (tr) {
+      e.preventDefault();
+      openModal('<video class="modal__video" src="' + tr.getAttribute("data-trailer") + '" poster="' + (tr.getAttribute("data-poster") || "") + '" controls autoplay playsinline></video>');
+      return;
+    }
     var img = e.target.closest("[data-lightbox]");
     if (img) {
       e.preventDefault();

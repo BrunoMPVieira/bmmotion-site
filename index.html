@@ -27,7 +27,7 @@
 <link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/style.css">
 <script>document.documentElement.classList.remove('no-js');</script>
-<link rel="preload" href="logo-800.webp" as="image" fetchpriority="high">
+<link rel="preload" href="assets/video/hero-poster.jpg" as="image" fetchpriority="high">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "name": "BMMotion", "url": "https://bmmotion.netlify.app", "image": "https://bmmotion.netlify.app/og-bmmotion.jpg", "description": "Vídeos cinematic, shorts e intros para servidores de MU Online. Edição de vídeo e videografismo para marcas e produtos.", "telephone": "+55 11 99422-3692", "areaServed": "BR", "priceRange": "R$ 49,90 – R$ 110,00", "makesOffer": [{"@type": "Offer", "name": "Trailer Cinematic", "price": "79.90", "priceCurrency": "BRL"}, {"@type": "Offer", "name": "Shorts Cinematic", "price": "49.90", "priceCurrency": "BRL"}, {"@type": "Offer", "name": "Combo Impacto", "price": "110.00", "priceCurrency": "BRL"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Quanto custa um vídeo para divulgar meu servidor de MU Online?", "acceptedAnswer": {"@type": "Answer", "text": "O cinematic de 1 minuto custa R$ 79,90. O Shorts Cinematic vertical custa R$ 49,90. O Combo Impacto custa R$ 110 e inclui 1 cinematic de 1 minuto, 1 short vertical e 1 intro cinematic."}}, {"@type": "Question", "name": "O que vem no Combo Impacto?", "acceptedAnswer": {"@type": "Answer", "text": "O combo de R$ 110 inclui 1 short vertical, 1 vídeo cinematic e 1 intro cinematic. Duração do short e da intro, estilo e materiais são combinados com você."}}, {"@type": "Question", "name": "Onde posso usar os shorts?", "acceptedAnswer": {"@type": "Answer", "text": "O formato vertical é pensado para Instagram, Facebook, YouTube Shorts, TikTok e Kwai. Antes da edição, conversamos sobre os canais em que você pretende publicar e a mensagem principal de cada peça."}}, {"@type": "Question", "name": "Vocês também editam vídeos para produtos e marcas?", "acceptedAnswer": {"@type": "Answer", "text": "Sim. Cinematic e Shorts Cinematic também podem apresentar produtos e marcas. Envie a identidade visual, os materiais disponíveis e uma referência do que deseja comunicar para conversarmos sobre seu projeto."}}, {"@type": "Question", "name": "O serviço inclui publicar anúncios ou divulgar meu servidor em canais de terceiros?", "acceptedAnswer": {"@type": "Answer", "text": "Os pacotes apresentados são de criação e edição dos vídeos. Veiculação de anúncios, compra de mídia e distribuição em canais de terceiros não estão incluídas na descrição desses pacotes."}}, {"@type": "Question", "name": "Como contratar e combinar a entrega?", "acceptedAnswer": {"@type": "Answer", "text": "Escolha um pacote e converse pelo WhatsApp (11) 99422-3692. Envie o objetivo, os materiais disponíveis e onde o vídeo será usado. Prazo, escopo e detalhes da entrega são definidos antes de começar."}}]}]}</script>
 </head>
 <body>
@@ -73,13 +73,16 @@
         <p class="hero__note reveal" style="--d:.4s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg> Olhar criativo. Técnica. Atenção a cada frame.</p>
       </div>
       <div class="reveal" style="--d:.25s">
-        <figure class="viewfinder viewfinder--logo">
-          <img src="logo-800.webp" srcset="logo-480.webp 480w, logo-800.webp 800w" sizes="(min-width:1024px) 40vw, 92vw" alt="Logo BMMotion" width="800" height="800" fetchpriority="high">
+        <figure class="viewfinder viewfinder--video">
+          <video class="vf-video" autoplay muted loop playsinline preload="auto" poster="assets/video/hero-poster.jpg" aria-label="Trailer de apresentação BMMotion (sem som)">
+            <source src="assets/video/hero-loop.mp4" type="video/mp4">
+          </video>
           <span class="vf-corner tl"></span><span class="vf-corner tr"></span><span class="vf-corner bl"></span><span class="vf-corner br"></span>
           <div class="vf-hud top"><span class="rec">REC</span><span data-timecode>00:00:12:00</span></div>
-          <span class="vf-center" aria-hidden="true"></span>
-          <figcaption class="vf-caption">Um olhar.<br><span class="accent">Infinitas histórias.</span></figcaption>
-          <div class="vf-hud bottom"><span>4K · 24FPS</span><span>ISO 800</span></div>
+          <button class="vf-play" type="button" data-trailer="assets/video/trailer-720.mp4" data-poster="assets/video/trailer-poster.jpg">
+            <span class="vf-play__icon"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z"/></svg></span><span>Assistir com som</span>
+          </button>
+          <div class="vf-hud bottom"><span>1080P · 30FPS</span><span>TRAILER BMMOTION</span></div>
         </figure>
       </div>
     </div>
