@@ -152,6 +152,7 @@
     if (modal && modal.classList.contains("is-open") && (e.target === modal || e.target.closest(".modal__close"))) closeModal();
   });
   document.addEventListener("keydown", function (e) {
+    if ((e.key === "Enter" || e.key === " ") && e.target.matches && e.target.matches("figure[data-trailer]")) { e.preventDefault(); e.target.click(); return; }
     if (e.key === "Escape") { closeModal(); setMenu(false); }
   });
 
