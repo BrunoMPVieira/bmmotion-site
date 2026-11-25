@@ -140,7 +140,7 @@
     var tr = e.target.closest("[data-trailer]");
     if (tr) {
       e.preventDefault();
-      openModal('<video class="modal__video" src="' + tr.getAttribute("data-trailer") + '" poster="' + (tr.getAttribute("data-poster") || "") + '" controls autoplay playsinline></video>');
+      openModal('<video class="modal__video" src="' + tr.getAttribute("data-trailer") + '" poster="' + (tr.getAttribute("data-poster") || "") + '" controls autoplay playsinline></video>', tr.hasAttribute("data-vertical"));
       return;
     }
     var img = e.target.closest("[data-lightbox]");
